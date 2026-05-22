@@ -1,0 +1,31 @@
+<mxfile>
+  <diagram name="DER Coma Bem">
+    <mxGraphModel dx="1000" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="restaurante" value="Restaurante&#xa;----------------------&#xa;PK id_restaurante&#xa;nome&#xa;latitude&#xa;longitude&#xa;tipo_culinaria" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="200" width="220" height="140" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="prato" value="Prato&#xa;----------------------&#xa;PK id_prato&#xa;nome_prato&#xa;foto_prato&#xa;FK id_restaurante" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="200" width="220" height="140" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="avaliacao" value="Avaliacao_Prato&#xa;----------------------&#xa;PK id_avaliacao&#xa;ranking (1-5)&#xa;recomendacao&#xa;FK id_prato" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="200" width="240" height="140" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="rel1" value="1:N" style="endArrow=block;html=1;" edge="1" parent="1" source="restaurante" target="prato">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="rel2" value="1:N" style="endArrow=block;html=1;" edge="1" parent="1" source="prato" target="avaliacao">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
