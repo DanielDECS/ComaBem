@@ -1,0 +1,9 @@
+name: coma_bem
+description: Projeto Dart para modelagem e acesso ao banco de dados do aplicativo Coma Bem.
+version: 1.0.0
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  mysql1: ^0.20.0
